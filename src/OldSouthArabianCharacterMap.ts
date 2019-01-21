@@ -19,15 +19,15 @@ export const oldSouthArabianCharacterMap: TransliterationCharacterMap[] = [
     // OLD SOUTH ARABIAN LETTER ALEF -> MODIFIER LETTER APOSTROPHE
     original: '𐩱',
     originalUnicodeValue: '\u{10A71}',
-    transliteration: 'ʼ',
-    transliterationUnicodeValue: '\u{02BC}',
+    transliteration: 'ʾ',
+    transliterationUnicodeValue: '\u{02BE}',
   },
   {
     // OLD SOUTH ARABIAN LETTER AYN -> MODIFIER LETTER REVERSED COMMA
     original: '𐩲',
     originalUnicodeValue: '\u{10A72}',
-    transliteration: 'ʽ',
-    transliterationUnicodeValue: '\u{02BD}',
+    transliteration: 'ʿ',
+    transliterationUnicodeValue: '\u{02BF}',
   },
   {
     // OLD SOUTH ARABIAN LETTER DHADHE -> LATIN SMALL LETTER D WITH DOT BELOW
@@ -100,11 +100,11 @@ export const oldSouthArabianCharacterMap: TransliterationCharacterMap[] = [
     transliterationUnicodeValue: '\u{1E93}',
   },
   {
-    // OLD SOUTH ARABIAN NUMBER ONE -> DIGIT ONE
+    // OLD SOUTH ARABIAN NUMBER ONE -> SPACE
     original: '𐩽',
     originalUnicodeValue: '\u{10A7D}',
-    transliteration: '1',
-    transliterationUnicodeValue: '\u{0031}',
+    transliteration: ' ',
+    transliterationUnicodeValue: '\u{0020}',
   },
   {
     // OLD SOUTH ARABIAN NUMBER FIFTY -> DIGIT FIVE DIGIT ZERO

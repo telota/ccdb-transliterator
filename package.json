@@ -1,9 +1,9 @@
 {
-  "name": "pahlavi.js",
-  "version": "1.0.0",
-  "description": "Transliterator for ancient arabic (Pahlavi)",
-  "main": "src/pahlavi.js",
-  "repository": "datenbistro:/opt/git/pahlavi.js.git",
+  "name": "ccdb-transliterator",
+  "version": "0.1.0",
+  "description": "Depencyless transliterator for ancient southern arabian, and other languages",
+  "main": "src/transliterate.js",
+  "repository": "github.com/telota/ccdb-transliterator",
   "author": "opohl@bbaw.de",
   "license": "MIT",
   "scripts": {

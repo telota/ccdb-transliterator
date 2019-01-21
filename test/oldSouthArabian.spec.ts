@@ -3,6 +3,7 @@ import {
   oldSouthArabianToTransliteration,
   transliterationToOldSouthArabian,
 } from '../src/transliterate';
+import { oldSouthArabianExamples } from './oldSouthArabianExamples';
 
 describe('pahlavi.js', () => {
   describe('#oldSouthArabianToTransliteration', () => {
@@ -10,16 +11,24 @@ describe('pahlavi.js', () => {
       expect(oldSouthArabianToTransliteration('𐩯')).to.equal('ś');
     });
 
-    it('should transliterate an example sentece', () => {
-      const example: String = '𐩥𐩦𐩩𐩱𐩥𐩽𐩥𐩥𐩧𐩵𐩥';
-      const expectation: String = 'wštʾw wwrdw';
-      expect(oldSouthArabianToTransliteration(example)).to.equal(expectation);
+    it('should transliterate example senteces', () => {
+      oldSouthArabianExamples.forEach((example) => {
+        expect(oldSouthArabianToTransliteration(example.original))
+          .to.equal(example.transliteration);
+      });
     });
   });
 
   describe('#transliterationToOldSouthArabian', () => {
     it('should convert SMALL S WITH ACUTE to SAMEKH', () => {
       expect(transliterationToOldSouthArabian('ś')).to.equal('𐩯');
+    });
+
+    it('should reconvert a transliterated example senteces', () => {
+      oldSouthArabianExamples.forEach((example) => {
+        expect(transliterationToOldSouthArabian(example.transliteration))
+          .to.equal(example.original);
+      });
     });
   });
 });
