@@ -1,0 +1,22 @@
+{
+  "name": "pahlavi.js",
+  "version": "1.0.0",
+  "description": "Transliterator for ancient arabic (Pahlavi)",
+  "main": "src/pahlavi.js",
+  "repository": "datenbistro:/opt/git/pahlavi.js.git",
+  "author": "opohl@bbaw.de",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --require ts-node/register test/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.2.4"
+  }
+}
