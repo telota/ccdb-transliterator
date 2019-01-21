@@ -3,6 +3,7 @@ import Buefy from 'buefy';
 import VueClipboard from 'vue-clipboard2'
 
 import 'buefy/dist/buefy.css';
+import './styles.css';
 
 import Navbar from './Navbar.vue';
 import Hero from './Hero.vue';

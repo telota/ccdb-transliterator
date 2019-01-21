@@ -1,0 +1,8 @@
+@font-face {
+  font-family: coranica;
+  src: url(coranica_1145.woff);
+}
+
+.coranica {
+  font-family: coranica;
+}

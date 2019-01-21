@@ -12,7 +12,7 @@
             <div class="content">
               <b-field 
                 label="Ancient South Arabian">
-                <b-input v-model="inputOriginal" dir="rtl"></b-input>
+                <b-input v-model="inputOriginal" dir="rtl" class="coranica"></b-input>
               </b-field>
               <p>{{ transliterated }}</p>
             </div>
@@ -41,7 +41,7 @@
               <b-field label="Transliteration">
                 <b-input v-model="inputTransliteration"></b-input>
               </b-field>
-              <p dir="rtl">{{ toOriginal }}</p>
+              <p dir="rtl" class="coranica">{{ toOriginal }}</p>
             </div>
           </div>
           <footer class="card-footer">
