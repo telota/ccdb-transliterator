@@ -15,6 +15,14 @@
                 <b-input v-model="inputOriginal" dir="rtl" class="coranica"></b-input>
               </b-field>
               <p>{{ transliterated }}</p>
+              <hr>
+              <button
+                v-for="char in oldSouthArabianCharacterMap"
+                :key="char.original"
+                @click="appendOriginal(char.original)"
+                class="button">
+                  {{ char.original }}
+              </button>
             </div>
           </div>
           <footer class="card-footer">
@@ -42,6 +50,14 @@
                 <b-input v-model="inputTransliteration"></b-input>
               </b-field>
               <p dir="rtl" class="coranica">{{ toOriginal }}</p>
+              <hr>
+              <button
+                v-for="char in oldSouthArabianCharacterMap"
+                :key="char.transliteration"
+                @click="appendTransliteration(char.transliteration)"
+                class="button">
+                  {{ char.transliteration }}
+              </button>
             </div>
           </div>
           <footer class="card-footer">
@@ -66,12 +82,15 @@ import {
   transliterationToOldSouthArabian
 } from '../../dist/transliterate';
 
+import oldSouthArabianCharacterMap from '../../dist/OldSouthArabianCharacterMap';
+
 export default {
   name: 'AncientSouthArabian',
   data() {
     return {
       inputOriginal: '𐩥𐩦𐩩𐩱𐩥𐩽𐩥𐩥𐩧𐩵𐩥',
-      inputTransliteration: 'mqly sbʾ wšʾ'
+      inputTransliteration: 'mqly sbʾ wšʾ',
+      oldSouthArabianCharacterMap
     };
   },
   computed: {
@@ -81,6 +100,14 @@ export default {
     toOriginal() {
       return transliterationToOldSouthArabian(this.inputTransliteration);
     }
+  },
+  methods: {
+    appendOriginal(input) {
+      this.inputOriginal += input;
+    },
+    appendTransliteration(input) {
+      this.inputTransliteration += input;
+    },
   }
 }
 </script>
