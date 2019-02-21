@@ -12,9 +12,7 @@
             <div class="content">
               <b-field 
                 label="Ancient South Arabian">
-                <div class="coranica">
-                  <b-input v-model="inputOriginal" dir="rtl" class="coranica"></b-input>
-                </div>
+                <b-input v-model="inputOriginal" dir="rtl" custom-class="coranica"></b-input>
               </b-field>
               <p>{{ transliterated }}</p>
               <hr>
