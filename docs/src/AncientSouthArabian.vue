@@ -12,7 +12,9 @@
             <div class="content">
               <b-field 
                 label="Ancient South Arabian">
-                <b-input v-model="inputOriginal" dir="rtl" class="coranica"></b-input>
+                <div class="coranica">
+                  <b-input v-model="inputOriginal" dir="rtl" class="coranica"></b-input>
+                </div>
               </b-field>
               <p>{{ transliterated }}</p>
               <hr>
@@ -20,7 +22,7 @@
                 v-for="char in oldSouthArabianCharacterMap"
                 :key="char.original"
                 @click="appendOriginal(char.original)"
-                class="button">
+                class="button coranica">
                   {{ char.original }}
               </button>
             </div>
