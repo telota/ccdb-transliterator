@@ -156,12 +156,6 @@ export const oldSouthArabianCharacterMap: TransliterationCharacterMap[] = [
   },
   {
     // OLD SOUTH ARABIAN LETTER WAW -> LATIN SMALL LETTER W
-    original: '',
-    originalUnicodeValue: '',
-    transliteration: '',
-    transliterationUnicodeValue: '',
-  },
-  {
     original: '𐩥',
     originalUnicodeValue: '\u{10A65}',
     transliteration: 'w',
